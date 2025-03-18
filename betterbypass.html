@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBypass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        iframe {
+            allowfullscreen 
+			title="Rammerhead" 
+			style="
+			border: 0;
+			height: 99.5%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 99.6%;
+        }
+    </style>
+    <script type="text/javascript">
+        function embedWebsite() {
+            var url = prompt("Please enter the website URL:", "http://");
+            if (url) {
+                if (!/^https?:\/\//i.test(url)) {
+                    url = "http://" + url;
+                }
+                document.getElementById("iframe").src = url;
+            }
+        }
+    </script>
+</head>
+<body onload="embedWebsite()">
+    <iframe id="iframe"></iframe>
+</body>
+</html>
