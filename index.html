@@ -8,20 +8,20 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-			margin: 0;
-      	    padding: 0;
 	    	height: 100%;
         }
         iframe {
             allowfullscreen 
-			title="Rammerhead" 
-			style="
-			border: 0;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
+            title="Rammerhead" 
+        	border: 0;
+        	left: 0;
+        	position: fixed;
+            top: 0;
+	    	width: 100vw;
+            height: 100vh;
+            display: none;
+	    	overflow: hidden;
+	    	z-index: 9999;
         }
     </style>
     <script type="text/javascript">
@@ -40,4 +40,5 @@
     <iframe id="iframe"></iframe>
 </body>
 </html>
+
 
