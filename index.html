@@ -8,25 +8,28 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+			margin: 0;
+      	    padding: 0;
+	    	height: 100%;
         }
         iframe {
             allowfullscreen 
 			title="Rammerhead" 
 			style="
 			border: 0;
-			height: 99.5%;
+			height: 100%;
 			left: 0;
 			position: absolute;
 			top: 0;
-			width: 99.6%;
+			width: 100%;
         }
     </style>
     <script type="text/javascript">
         function embedWebsite() {
-            var url = prompt("Please enter the website URL:", "http://");
+            var url = prompt("Please enter the website URL:", "https://");
             if (url) {
                 if (!/^https?:\/\//i.test(url)) {
-                    url = "http://" + url;
+                    url = "https://" + url;
                 }
                 document.getElementById("iframe").src = url;
             }
@@ -37,3 +40,4 @@
     <iframe id="iframe"></iframe>
 </body>
 </html>
+
